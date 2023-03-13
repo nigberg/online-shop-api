@@ -11,10 +11,10 @@ const cartSchema = new mongoose.Schema({
     ref: 'product',
     required: true,
   },
-  quantity: {
-    type: Number,
-    required: true,
-  },
+  // quantity: {
+  //   type: Number,
+  //   required: true,
+  // },
 });
 
 module.exports = mongoose.model('cart', cartSchema);

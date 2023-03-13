@@ -24,7 +24,7 @@ const createUser = (req, res, next) => {
     }))
     .then((user) => {
       const userDataResponse = {
-        name: user.name, email: user.email, _id: user._id,
+        name: user.name, email: user.email, _id: user._id, role: user.role,
       };
       res.status(OK_CREATED_CODE).send({ data: userDataResponse });
     })
